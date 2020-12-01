@@ -38,7 +38,7 @@ function About(props) {
     return(
         <div className="container">
             <div className="row">
-                <Breadcrumb>
+                <Breadcrumb className="m-1">
                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
                     <BreadcrumbItem active>About Us</BreadcrumbItem>
                 </Breadcrumb>
