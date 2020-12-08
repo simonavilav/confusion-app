@@ -7,19 +7,25 @@ import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 
 function RenderDish({dish}) {
     if (dish != null) {
         return(
             <div className="col-12 col-md-5 m-1">
-            <Card>
-                <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
-                <CardBody>
-                    <CardTitle><b>{dish.name}</b></CardTitle>
-                    <CardText>{dish.description}</CardText>
-                </CardBody>
-            </Card>
+            <FadeTransform in 
+            transformProps={{
+                exitTransform: 'scale(0.5 translateY(-50%)'
+            }} >
+                <Card>
+                    <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
+                    <CardBody>
+                        <CardTitle><b>{dish.name}</b></CardTitle>
+                        <CardText>{dish.description}</CardText>
+                    </CardBody>
+                </Card>
+            </FadeTransform>
             </div>
         );
     } else {
@@ -34,8 +40,12 @@ function RenderComments({comments, postComment, dishId}) {
         const coms = comments.map((comment) => {
             return (
             <ul key={comment.id} className="list-unstyled">
-                <li className="mt-2">{comment.comment}</li>
-                <li className="mb-4">-- {comment.author}, {new Intl.DateTimeFormat('en-US',{year: 'numeric', month: 'short', day:'2-digit'}).format(new Date(Date.parse(comment.date)))}</li>
+                <Stagger in>
+                    <Fade in>
+                        <li className="mt-2">{comment.comment}</li>
+                        <li className="mb-4">-- {comment.author}, {new Intl.DateTimeFormat('en-US',{year: 'numeric', month: 'short', day:'2-digit'}).format(new Date(Date.parse(comment.date)))}</li>
+                    </Fade>
+                </Stagger>
             </ul>
             );
         })
