@@ -201,6 +201,22 @@
       "comment": "It's your birthday, we're gonna party!",
       "author": "25 Cent",
       "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 0,
+      "rating": "4",
+      "author": "Sim Onavila",
+      "comment": "Muy rico todo.",
+      "date": "2020-12-08T03:28:01.819Z",
+      "id": 20
+    },
+    {
+      "dishId": 0,
+      "rating": "1",
+      "author": "Betular",
+      "comment": "horrible\n",
+      "date": "2020-12-08T03:28:48.311Z",
+      "id": 21
     }
   ],
   "promotions": [
