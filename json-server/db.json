@@ -217,6 +217,14 @@
       "comment": "horrible\n",
       "date": "2020-12-08T03:28:48.311Z",
       "id": 21
+    },
+    {
+      "dishId": 2,
+      "rating": "5",
+      "author": "Homero",
+      "comment": "HMMMMmmmmmmm la rosca prohibida.",
+      "date": "2020-12-08T03:33:23.663Z",
+      "id": 22
     }
   ],
   "promotions": [
