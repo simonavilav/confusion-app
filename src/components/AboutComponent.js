@@ -1,6 +1,9 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { baseUrl } from '../shared/baseUrl';
+import { Loading } from './LoadingComponent';
+import { Fade, Stagger } from 'react-animation-components';
 
 function About(props) {
 
@@ -10,7 +13,7 @@ function About(props) {
                 <div key={leader.id} className="col-12 m-1 mb-5">
                     <Media className="mt-5">
                         <Media left className="mr-5">
-                            <Media object src={leader.image} alt={leader.name} />
+                            <Media object src={baseUrl + leader.image} alt={leader.name} />
                         </Media>
                         <Media body>
                             <Media heading>
@@ -29,11 +32,51 @@ function About(props) {
         }
     }
 
-    const leaders = props.leaders.map((leader) => {
-        return (
-            <RenderLeader leader={leader} />
-        );
-    });
+    /////////////////////////////////////////////////////////////////////////////////////
+    //////// ASSIGNMENT 4, TASK 1: HANDLING ERRORS, LOADING AND MAPPING LEADERS. ////////
+    /////////////////////////////////////////////////////////////////////////////////////
+
+    function handleleaders (params) {
+        
+        const leaders = params.leaders.map((leader) => {
+            return (
+                <Fade in>
+                    <RenderLeader leader={leader} />
+                </Fade>
+            );
+        });
+
+        if (params.errMess) {
+            return(
+                <div className="container">
+                    <div className="row">
+                        <h4>{params.errMess}</h4>
+                    </div>
+                </div>
+            );
+        } else if (params.isLoading) {
+            return(
+                <div className="container">
+                    <div className="row">
+                        <Loading />
+                    </div>
+                </div>
+            );
+        } else {
+            return (
+                <div>
+                    <Stagger delay={300} in>
+                        {leaders}
+                    </Stagger>
+                </div>
+            );
+        }
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////
+
 
     return(
         <div className="container">
@@ -91,7 +134,7 @@ function About(props) {
                 </div>
                 <div className="col-12">
                     <Media list>
-                        {leaders}
+                        {handleleaders(props.leaders)}    
                     </Media>
                 </div>
             </div>

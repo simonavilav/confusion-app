@@ -225,6 +225,14 @@
       "comment": "HMMMMmmmmmmm la rosca prohibida.",
       "date": "2020-12-08T03:33:23.663Z",
       "id": 22
+    },
+    {
+      "dishId": 3,
+      "rating": "5",
+      "author": "Pie de lemon",
+      "comment": "asdac1",
+      "date": "2020-12-10T22:53:30.661Z",
+      "id": 23
     }
   ],
   "promotions": [
@@ -287,6 +295,138 @@
       "message": "afadsfds",
       "date": "2017-12-04T09:41:49.890Z",
       "id": 1
+    },
+    {
+      "firstname": "simon",
+      "lastname": "avil",
+      "telnum": "123456",
+      "email": "asd@asd.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "",
+      "date": "2020-12-10T23:46:35.414Z",
+      "id": 2
+    },
+    {
+      "firstname": "Testname",
+      "lastname": "Testlastname",
+      "telnum": "987654321",
+      "email": "abc@cba.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "This is a test.",
+      "date": "2020-12-10T23:49:39.958Z",
+      "id": 3
+    },
+    {
+      "firstname": "asdasd",
+      "lastname": "asdasda",
+      "telnum": "123",
+      "email": "asda@ascd.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "another test",
+      "date": "2020-12-11T00:14:43.698Z",
+      "id": 4
+    },
+    {
+      "firstname": "negra",
+      "lastname": "peloc",
+      "telnum": "12345",
+      "email": "negra@peloc.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "testing notify",
+      "date": "2020-12-11T00:15:41.257Z",
+      "id": 5
+    },
+    {
+      "firstname": "raul",
+      "lastname": "muppala",
+      "telnum": "123456",
+      "email": "123@gmail.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "tired of testing",
+      "date": "2020-12-11T00:24:49.625Z",
+      "id": 6
+    },
+    {
+      "firstname": "test1",
+      "lastname": "test2",
+      "telnum": "1234",
+      "email": "test@testing.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "more testing",
+      "date": "2020-12-11T00:26:04.492Z",
+      "id": 7
+    },
+    {
+      "firstname": "nahelio",
+      "lastname": "bardo",
+      "telnum": "123",
+      "email": "123@asd.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "nahelio bordana",
+      "date": "2020-12-11T00:38:41.199Z",
+      "id": 8
+    },
+    {
+      "firstname": "2112vasd",
+      "lastname": "asda",
+      "telnum": "1212313",
+      "email": "ascadf@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "yes",
+      "date": "2020-12-11T00:41:19.358Z",
+      "id": 9
+    },
+    {
+      "firstname": "21cascasd",
+      "lastname": "asdasd",
+      "telnum": "1231231231",
+      "email": "asdas@asdas.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "yes",
+      "date": "2020-12-11T00:42:01.242Z",
+      "id": 10
+    },
+    {
+      "firstname": "asdasdasd",
+      "lastname": "asdasdad",
+      "telnum": "12312312",
+      "email": "asdas@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "testesst",
+      "date": "2020-12-11T00:46:11.771Z",
+      "id": 11
+    },
+    {
+      "firstname": "simon",
+      "lastname": "avila",
+      "telnum": "123123",
+      "email": "asda@asda.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "sofi",
+      "date": "2020-12-11T00:48:11.743Z",
+      "id": 12
+    },
+    {
+      "firstname": "nahelio",
+      "lastname": "bardo",
+      "telnum": "123456",
+      "email": "nahelio@mail.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "dont contact me by email or telnum.",
+      "date": "2020-12-11T00:52:26.349Z",
+      "id": 13
     }
   ]
 }
